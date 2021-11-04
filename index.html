@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Let's Learn English</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="shortcut icon" type="image/jpg" href="images/favicon.jpg"/>
+	<style>
+* {box-sizing: border-box;}
+
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+
+
+</head>
+<body bgcolor="beige;">
+
+<header>
+	
+	<div id="head">
+		<a href="index.html"><i>Let's Learn English</i></a>
+	</div>
+						
+</header>
+	<!--Link to show the home page-->
+<div id="behind">
+	<a href="index.html">ACCUEIL</a> &nbsp| &nbsp<a href="videos.html">VIDEOS</a>&nbsp |&nbsp <a href="waw.html">QUI SOMMES-NOUS</a>
+</div>
+
+<div id="pics">
+	<!--Pictures and links for the soaps-->
+
+
+
+<div class="slideshow-container">
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/O6KsRnAWbLo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+	<br>
+	<!--That's the line between the different soaps and links-->
+	<!--End of the line-->
+	<br>
+	
+</div>
+<div>
+  <p style="font-size: 40px; text-align: justify;">
+    The team of "Let's Learn English" is a globally engaged team that is committed to making a difference by solving problems and improving lives. We are one team of multiple people in many countries, as well as delivering off-campus courses and having offices around the world and we aim to engender a global mindset among our students.
+  </br>
+</br>
+As a team without borders, we give to everyone that are with us a unique opportunity to explore what it means to be studying english abroad using the technology, conducting cutting edge research across more areas, and providing a quality and higher education to many more students than would otherwise be possible. Whether it is collaborating on delivering solutions to global research challenges or co-delivering innovative taught programmes, we also strive to develop meaningful and productive partnerships with leading institutions across the globe.
+  </p>
+</div>
+
+</body>
+	<footer>
+		<div id="footer">
+			<!--Link for the whatsapp icon and and the link for the phone number-->
+	<p>For more information, contact us on: <a href="https://api.whatsapp.com/send?phone=+50944957486">Whatsapp</a></p>
+  <a href="https://api.whatsapp.com/send?phone=+50944957486&text=Hello" target="blank">
+		
+				<img src="images/b05d54dcb0459172f686172178986019.png" id="whatsapp">
+	</a>
+
+	</div>
+	</footer>
+</html>
+
+
+<!--
+<div class="mySlides fade">
+  <div class="numbertext">1 / 4</div>
+  <img src="Pics/favicon.png" style="width: 100%;">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 4</div>
+  <img src="Pics/books.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 4</div>
+  <img src="Pics/table.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 4</div>
+  <img src="Pics/students.jpg" style="width:100%">
+</div>-->
